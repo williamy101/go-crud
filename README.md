@@ -7,15 +7,15 @@
    - Produk/Product:
      - GET `/product`: Melihat semua produk.
      - POST `/product`: Menambahkan produk.
-     - PUT `/product/:id`: Memperbarui produk berdasarkan ProductID.
-     - DELETE `/product/:id`: Menghapus produk berdasarkan ProductID.
+     - PUT `/product/:product_id`: Memperbarui produk berdasarkan ProductID.
+     - DELETE `/product/:product_id`: Menghapus produk berdasarkan ProductID.
    - Inventaris/Inventory:
      - GET `/inventory`: Melihat tingkat stok produk.
      - PUT `/inventory/:product_id`: Memperbarui tingkat stok produk.
    - Pesanan/Order:
-     - GET `/orders/:id`: Melihat detail pesanan berdasarkan OrderID.
+     - GET `/orders/:order_id`: Melihat detail pesanan berdasarkan OrderID.
      - POST `/orders`: Membuat pesanan baru.
    - Gambar Produk:
-     - POST `/product/:id/image`: Mengunggah gambar produk.
-     - GET `/product/:id/image`: Mengunduh gambar produk.
+     - POST `/product/:product_id/image`: Mengunggah gambar produk.
+     - GET `/product/:product_id/image`: Mengunduh gambar produk.
 5. Gambar yang diunggah akan disimpan di folder `uploads/`.
