@@ -10,7 +10,7 @@ import (
 var DB *gorm.DB
 
 func ConnectDatabase() {
-	dsn := "root:86%mIlQLOEnF@tcp(127.0.0.1:3306)/inventory_management?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:your_password@tcp(127.0.0.1:3306)/inventory_management?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		log.Fatal("Database Connection Failed!:", err)
